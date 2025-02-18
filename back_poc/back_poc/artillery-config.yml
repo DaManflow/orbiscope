@@ -1,0 +1,9 @@
+config:
+  target: "http://localhost:3000" # L'URL de votre application
+  phases:
+    - duration: 30      # Durée du test en secondes
+      arrivalRate: 10   # Nombre de requêtes par seconde
+scenarios:
+  - flow:
+      - get:
+          url: "/countries"
